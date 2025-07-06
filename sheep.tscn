@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhcsjj4e8ic2a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kix83"]
+
+[node name="Sheep" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(0.160784, 1, 1, 1)
+
+[node name="body" type="RigidBody2D" parent="."]
+
+[node name="shape" type="CollisionShape2D" parent="body"]
+shape = SubResource("RectangleShape2D_kix83")

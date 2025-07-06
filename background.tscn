@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5sux2gcq3xoi"]
+
+[ext_resource type="PackedScene" uid="uid://dhcsjj4e8ic2a" path="res://sheep.tscn" id="1_oabld"]
+[ext_resource type="Script" uid="uid://bi2cfpuf5fcgd" path="res://sheep.gd" id="2_i7s6n"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.258824, 0.827451, 0, 1)
+
+[node name="Sheep" parent="." instance=ExtResource("1_oabld")]
+position = Vector2(541, 260)
+script = ExtResource("2_i7s6n")
