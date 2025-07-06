@@ -1,15 +1,29 @@
 [gd_scene load_steps=3 format=3 uid="uid://c5sux2gcq3xoi"]
 
 [ext_resource type="PackedScene" uid="uid://dhcsjj4e8ic2a" path="res://sheep.tscn" id="1_oabld"]
-[ext_resource type="Script" uid="uid://bi2cfpuf5fcgd" path="res://sheep.gd" id="2_i7s6n"]
+[ext_resource type="PackedScene" uid="uid://h5fmfxt3nfaf" path="res://obstacle.tscn" id="3_xehqc"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1152.0
+offset_left = 4.0
+offset_right = 1156.0
 offset_bottom = 648.0
 color = Color(0.258824, 0.827451, 0, 1)
 
 [node name="Sheep" parent="." instance=ExtResource("1_oabld")]
 position = Vector2(541, 260)
-script = ExtResource("2_i7s6n")
+
+[node name="Obstacle" parent="." instance=ExtResource("3_xehqc")]
+position = Vector2(546, 129)
+
+[node name="Obstacle2" parent="." instance=ExtResource("3_xehqc")]
+position = Vector2(546, 421)
+
+[node name="Obstacle3" parent="." instance=ExtResource("3_xehqc")]
+position = Vector2(713, 275)
+rotation = 1.5708
+
+[node name="Obstacle4" parent="." instance=ExtResource("3_xehqc")]
+position = Vector2(379, 275)
+rotation = 1.5708

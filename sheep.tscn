@@ -1,17 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhcsjj4e8ic2a"]
+[gd_scene load_steps=3 format=3 uid="uid://dhcsjj4e8ic2a"]
+
+[ext_resource type="Script" uid="uid://bi2cfpuf5fcgd" path="res://sheep.gd" id="1_0sl4e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kix83"]
 
-[node name="Sheep" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Sheep" type="CharacterBody2D" parent="."]
+motion_mode = 1
+script = ExtResource("1_0sl4e")
+
+[node name="shape" type="CollisionShape2D" parent="Sheep"]
+shape = SubResource("RectangleShape2D_kix83")
+
+[node name="ColorRect" type="ColorRect" parent="Sheep"]
 offset_left = -10.0
 offset_top = -10.0
 offset_right = 10.0
 offset_bottom = 10.0
 color = Color(0.160784, 1, 1, 1)
-
-[node name="body" type="RigidBody2D" parent="."]
-
-[node name="shape" type="CollisionShape2D" parent="body"]
-shape = SubResource("RectangleShape2D_kix83")
