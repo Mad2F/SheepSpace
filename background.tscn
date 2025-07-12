@@ -12,7 +12,7 @@ offset_bottom = 648.0
 color = Color(0.258824, 0.827451, 0, 1)
 
 [node name="Sheep" parent="." instance=ExtResource("1_oabld")]
-position = Vector2(541, 260)
+position = Vector2(514, 240)
 
 [node name="Obstacle" parent="." instance=ExtResource("3_xehqc")]
 position = Vector2(546, 129)
